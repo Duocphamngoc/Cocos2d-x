@@ -21,10 +21,10 @@
     <ClCompile Include="..\Classes\Object.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\SpaceShooter.cpp">
+    <ClCompile Include="..\Classes\LoadingScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\LoadingScene.cpp">
+    <ClCompile Include="..\Classes\ResourceManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,10 +38,10 @@
     <ClInclude Include="..\Classes\Object.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\SpaceShooter.h">
+    <ClInclude Include="..\Classes\LoadingScene.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\LoadingScene.h">
+    <ClInclude Include="..\Classes\ResourceManager.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
