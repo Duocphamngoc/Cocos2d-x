@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
  Copyright (c) 2017-2018 Xiamen Yaji Software Co., Ltd.
  
  http://www.cocos2d-x.org
@@ -27,11 +27,9 @@
 
 #include "cocos2d.h"
 
-/**
-@brief    The cocos2d Application.
+static const float      SCREEN_DESIGN_WIDTH = 1080.0f; 
+static const float      SCREEN_DESIGN_HEIGHT = 1920.0f;
 
-Private inheritance here hides part of interface from Director.
-*/
 class  AppDelegate : private cocos2d::Application
 {
 public:
