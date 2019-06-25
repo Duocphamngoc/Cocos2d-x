@@ -40,7 +40,7 @@ bool LoadingScene::init()
 		log("error");
 	}
 	else {
-		label->setString("LOADING....!");
+		label->setString("Loading.....");
 		label->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height /3 + origin.y));
 		this->addChild(label,1);
 	}

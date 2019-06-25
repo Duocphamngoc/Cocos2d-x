@@ -33,6 +33,17 @@ bool MainMenuScene::init()
 		logo->setPosition(Vec2(visibleSize.width/2  + origin.x, visibleSize.height + origin.y-50));
 		this->addChild(logo, 1);
 	}
+
+	buttonPlay = ResourceManager::getInstance()->GetButtonById(0);
+	buttonPlay->removeFromParent();
+	if (logo == nullptr) {
+		log("ddadsas");
+	}
+	else {
+		buttonPlay->setScale(0.3);
+		buttonPlay->setPosition(Vec2(visibleSize.width / 2 + origin.x, visibleSize.height/2 + origin.y));
+		this->addChild(buttonPlay, 1);
+	}
 	return true;
 }
 
