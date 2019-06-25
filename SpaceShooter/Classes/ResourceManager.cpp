@@ -13,9 +13,8 @@ ResourceManager* ResourceManager::getInstance()
 {
 	if (!r)
 	{
-		r = new (std::nothrow) ResourceManager;
-		CCASSERT(r, "FATAL: Not enough memory");
-		r->Init();
+		r = new  ResourceManager;
+	//	r->Init();
 	}
 	return r;
 }
@@ -57,6 +56,7 @@ void ResourceManager::Load()
 			data = data.substr(pos + 2, 100);
 			second ="res" + data;
 			Sprite* s = Sprite::create(second);
+			
 			m_sprites.insert(pair<int, Sprite*>(first, s));
 
 			if (j != 2) {
@@ -83,5 +83,24 @@ void ResourceManager::Load()
 		}
 	}
 	f.close();
+}
+
+Sprite * ResourceManager::GetSpriteById(int id)
+{
+	map<int, Sprite*>::iterator iter = m_sprites.find(id);
+	while(iter!= m_sprites.end())
+		return iter->second;
+}
+
+ui::Button * ResourceManager::GetButtonById(int id)
+{
+	map <int, ui::Button*>::iterator iter = m_buttons.find(id);
+	return iter->second;
+}
+
+Label * ResourceManager::GetLabelById(int id)
+{
+	map <int, Label*>::iterator iter = m_labels.find(id);
+	return iter->second;
 }
 

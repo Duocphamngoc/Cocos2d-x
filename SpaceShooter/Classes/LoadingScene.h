@@ -14,7 +14,6 @@ private:
 	Sprite* background;
 	Sprite* loadding;
 	
-	
 public:
     static cocos2d::Scene* createScene();
 

@@ -16,7 +16,7 @@ public:
 	static ResourceManager* getInstance();
 	void Init();
 	void Load();
-	Sprite* GetSpriteById();
-	ui::Button* GetButtonById();
-	Label* GetLabelById();
+	Sprite* GetSpriteById(int id);
+	ui::Button* GetButtonById(int id);
+	Label* GetLabelById(int id);
 };
