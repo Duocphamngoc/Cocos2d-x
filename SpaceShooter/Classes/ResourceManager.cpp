@@ -56,7 +56,7 @@ void ResourceManager::Load()
 			data = data.substr(pos + 2, 100);
 			second ="res" + data;
 			Sprite* s = Sprite::create(second);
-			
+			CC_SAFE_RETAIN(s);
 			m_sprites.insert(pair<int, Sprite*>(first, s));
 
 			if (j != 2) {
@@ -69,6 +69,7 @@ void ResourceManager::Load()
 			}
 			if (j >= 3) {
 				Label* label = Label::createWithTTF("",second,20);
+				CC_SAFE_RETAIN(label);
 				m_labels.insert(pair<int, Label*>(first, label));
 			}
 		}	
@@ -79,6 +80,7 @@ void ResourceManager::Load()
 			i = 0;
 			check_button = 0;
 			ui::Button* button = ui::Button::create(second,third);
+			CC_SAFE_RETAIN(button);
 			m_buttons.insert(pair<int, Button*>(first, button));
 		}
 	}

@@ -5,6 +5,7 @@
 
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
+#include "MainMenuScene.h"
 
 USING_NS_CC;
 
@@ -12,7 +13,8 @@ class LoadingScene : public cocos2d::Scene
 {
 private:
 	Sprite* background;
-	Sprite* loadding;
+	Sprite* loading;
+	Label* label;
 	
 public:
     static cocos2d::Scene* createScene();
