@@ -1,12 +1,12 @@
 #pragma once
 #include "cocos2d.h"
 USING_NS_CC;
-class Object {
-private:
+class MObject {
+protected:
 	Sprite* m_sprite;
 public:
-	Object();
-	~Object();
+	MObject();
+	~MObject();
 	virtual void Update()=0;
 	virtual void Init()=0;
 };
