@@ -36,7 +36,7 @@ mono_crash.*
 !Debug/vld_x86.pdb
 !Debug/MyVirus.ilk
 !Debug/MyVirus.pdb
-
+Debug.win32/
 
 [Dd]ebugPublic/
 [Rr]elease/
